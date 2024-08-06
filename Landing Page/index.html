@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#services">Our Services</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+        <button class="login-button">Login</button>
+    </header>
+    <div class="content">
+        <h1 class="welcome">Welcome to LS MUSIC INDUSTRY</h1>
+        <h2 class="quote">"MUSIC GIVES A SOUL TO THE UNIVERSE, WINGS TO THE MIND, FLIGHT TO THE IMAGINATION,<br>
+             LIFE TO EVERYTHING"</h2>
+        <div class="buttons">
+            <a href="#services" class="explore-button">Explore</a>
+        </div>
+        <button class="scroll-up" onclick="scrollToTop()">↑</button>
+    </div>
+    <section id="about">
+        <div class="about">
+            <img src="images/background4.jpg" alt="About Us">
+            <div class="text">
+                <h2 class="coloured-heading" onclick="addClickEffect(this)">About us</h2>
+                <p>LS Music is dedicated to nurturing musical talent and providing artists with the resources to succeed. We offer state-of-the-art production services, live event organization, and music education. Join us to celebrate and create the universal language of music..</p>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="services-header">
+            <h2 class="coloured-heading" onclick="addClickEffect(this)">Our Services</h2>
+        </div>
+        <div class="services">
+            <div class="box" onclick="addClickEffect(this)">
+                <img src="/images/Service1.jpg" alt="Service 1">
+                <h3>Music Production</h3>
+                <p>High-quality recording, mixing, and mastering services in studios</p>
+            </div>
+            <div class="box" onclick="addClickEffect(this)">
+                <img src="/images/Service2.png" alt="Service 2">
+                <h3>Artist Management</h3>
+                <p>Comprehensive support including marketing, promotion, and career development for artists</p>
+            </div>
+            <div class="box" onclick="addClickEffect(this)">
+                <img src="/images/Service3.png" alt="Service 3">
+                <h3>Live Event Organization</h3>
+                <p>Planning and hosting concerts, gigs, and music festivals</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="logo">
+            <img src="/images/logo.png" alt="Company Logo">
+            <span>LS MUSIC</span>
+        </div>
+        <div class="address">
+            <p>1/2 Music Street,<br> Music, 55555</p>
+        </div>
+        <div class="contact">
+            <p>Contact: 1234567890<br>Email:MusicComapany1@gmail.com</p>
+        </div>
+    </footer>    
+    <script>
+        function scrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+        
+        function addClickEffect(element) {
+            element.classList.add('clicked');
+            setTimeout(() => {
+                element.classList.remove('clicked');
+            }, 500);
+        }
+
+        document.querySelector('.explore-button').addEventListener('click', function() {
+            this.classList.add('clicked');
+            setTimeout(() => {
+                this.classList.remove('clicked');
+            }, 500);
+        });
+    </script>
+</body>
+</html>
