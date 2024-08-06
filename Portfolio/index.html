@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="name">Lokesh K</div>
+        <nav class="navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="buttons">
+    <button class="scroll-up" onclick="scrollToTop()">↑</button>
+    <main>
+        <section id="home" class="main-content">
+            <div class="left-section">
+                <div class="intro-text">
+                    <h1>
+                        <span class="small-text">Hello, I am </span> 
+                        <span class="large-text">Lokesh K</span>
+                    </h1>
+                    <p>Welcome to my portfolio!</p>
+                    <p>I'm a passionate web designer dedicated to creating visually stunning and user-friendly websites.</p>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="profile-pic"></div>
+            </div>
+            
+        </section>
+        
+        <section class="about" id="about">
+                <h2 class="title">About me</h2>
+                <div class="about-content">
+                    <div class="column left">
+                        <img src="Images/About.JPG" alt="Profile">
+                    </div>
+                    <div class="column right">
+                        <div class="text">Hello! I'm <span class="break">Lokesh</span>
+                        </div>
+                        <p>a passionate web designer dedicated to crafting beautiful and functional websites. With a keen eye for design and a deep understanding of user experience, I create digital experiences that are both visually appealing and highly usable. My work blends creativity with technical expertise, resulting in unique and engaging online presences. This portfolio showcases my skills, projects, and the design journey I've embarked on. Explore my work, and let's connect to bring your web ideas to life!</p> 
+                    </div>
+                </div>
+        </section>
+
+        <section class="skills" id="skills">
+                <h2 class="title">My skills</h2>
+                <div class="skills-content">
+                    <div class="column left">
+                        <div class="text">My creative skills</div>
+                        <p>As a skilled web designer, I bring a versatile set of talents to the table. My expertise spans across HTML, CSS, JavaScript, Python, and React, enabling me to craft visually stunning and highly functional websites. I excel in creating clean, semantic HTML structures, styling them with responsive and creative CSS designs. With JavaScript, I infuse interactivity and dynamic features, making user experiences engaging and seamless. My knowledge of Python allows me to handle backend development and complex data processes, while my proficiency in React helps me build modern, scalable web applications. With a keen eye for design and a strong technical foundation, I am committed to delivering websites that are both beautiful and user-friendly.</p>
+                    </div>
+                    <div class="column right">
+                        <div class="info">
+                            <img src="/Images/html.webp" alt="html" width="80" /> 
+                            <img src="/Images/css.webp" alt="css" width="80" />
+                            <img src="/Images/JavaScript.webp" alt="JavaScript" width="80" />
+                            <img src="/Images/React.webp" alt="react.js" width="80" />               
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="projects" id="projects">
+                <h2 class="title">My Projects</h2>
+                <div class="project-content">
+                    <div class="container">
+                            <div class="box">
+                                <img src="/Images/web1.png" alt="COCOON">
+                            </div>
+                            <h1>COCOON:The Serenescape</h1>
+                        <p>HTML,CSS,JavaScript,Python</p>
+                        <p>In today's fast-paced world, stress has become an inevitable part of our lives, impacting our mental and emotional well-being.<br>
+                             Recognizing the importance of addressing this issue, we present "Cocoon" - a project aimed at providing a digital sanctuary for stress relief and mental rejuvenation.</p>
+                    </div>
+        </section>
+
+        <section class="resume" id="resume">
+            <h2 class="title">Resume</h2>
+            <div class="resume-content">
+                <div class="box">
+                        <img src="/Images/Profile.JPG" alt="Resume">
+                        <a href="Images/LOKESH K.pdf" target="blank" rel="noreferrer" title="Resume">
+                            <h1>LOKESH K</h1>
+                        </a>
+                </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2 class="title">Contact</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="icon-name"></i>
+                        <h3>Name</h3>
+                        <p>LOKESH K</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="icon-address"></i>
+                        <h3>Address</h3>
+                        <p>Coimbatore <br>
+                        TamilNadu</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="icon-mailbox"></i> 
+                        <h3>Email</h3>
+                        <p><a href="mailto:lokeshsh5252@gmail.com">Lokesh</a></p>
+                    </div>
+                </div>
+                <div class="stay-connected">
+                    <h2>Stay Connected</h2>
+                    <div class="social-icons">
+                        <a href="" class="icon-facebook" target="_blank" rel="noopener noreferrer"></a>
+                        <a href="" class="icon-twitter" target="_blank" rel="noopener noreferrer"></a>
+                        <a href="" class="icon-linkedin" target="_blank" rel="noopener noreferrer"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="footer-container">
+                <div class="footer-name">
+                    <p>Lokesh K</p>
+                </div>
+                <div class="footer-copy">
+                    <p>&copy; 2024. Rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+    </script>
+    
+</body>
+</html>

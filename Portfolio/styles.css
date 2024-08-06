@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body,html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.header {
+  background: linear-gradient(to right, #0b0b0b, #3e3c3c);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  transition: box-shadow 0.3s ease; 
+  position: sticky; 
+  top: 0; 
+  z-index: 1000; 
+}
+
+.header .name {
+  font-size: 50px;
+  margin-left: 100px;
+  font-family: 'Great Vibes', cursive;
+  background: linear-gradient(to right, #ef4e25, #ebb185);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+}
+
+.header .navigation a {
+  color: white;
+  text-decoration: none;
+  margin: 0;
+  margin-right: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  z-index: 1; 
+}
+
+.header .navigation a:hover{
+  box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.5);
+}
+
+.header:hover {
+  box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.5);
+}
+
+
+main {
+  padding-top: 80px; 
+}
+
+.main-content {
+  display: flex;
+  height: 80vh; 
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.left-section {
+  flex: 1;
+  display: flex;
+  margin-bottom: 100px;
+  margin-left: 100px;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  text-align: center;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  text-align: center;
+}
+
+.intro-text {
+  max-width: 600px;
+}
+
+.intro-text h1 {
+  margin-bottom: 20px;
+}
+.small-text {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 24px; 
+  margin-right: 10px; 
+  color: white;
+}
+
+.large-text {
+  font-size: 48px; 
+  font-weight: bold; 
+  font-family: 'Great Vibes', cursive;
+  background: linear-gradient(45deg, #FF0000,#FFA500,#EE82EE);
+  background-size: 200% 200%;
+  background-clip: text;    
+  animation: rainbow 3s linear infinite;
+  -webkit-background-clip: text;
+  color: transparent;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.small-text:hover {
+  color: rgb(225, 215, 215);
+}
+.large-text:hover {
+  color: rgb(225, 215, 215);
+}
+
+.intro-text p {
+  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 1.6;
+  margin: 10px 0;
+  animation: colorchange 3s linear infinite;
+}
+
+@keyframes colorchange {
+  0% { color:white; }
+  50% { color:black; }
+  100% { color: crimson; }
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  margin-bottom: 100px;
+  margin-right: 100px;
+  justify-content: center;
+  align-items: center;
+  background-color: black; 
+  position: relative;
+}
+
+.profile-pic {
+  width: 400px; 
+  height: 400px; 
+  background: url('Images/Profile.JPG') no-repeat center center;
+  background-size: cover;
+  border: 5px solid white;
+  border-radius: 50%; 
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+section {
+  padding: 100px 0;
+}
+
+.about,.skills,.resume,.contact {
+  background: #111;
+  color: #fff;
+}
+.about{
+  background: linear-gradient(to right, #0e0d0d, #282726);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.about .about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 300px;
+  margin-right: 200px;
+}
+section .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+
+section .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+
+.about .title:hover{
+  color: black;
+
+}
+.about .about-content .left {
+  width: 45%;
+}
+.about .about-content .left img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.about .about-content .right {
+  width: 55%;
+}
+.about .about-content .right .text {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.about .about-content .right .text span {
+  color: crimson;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about .about-content .right p {
+  text-align: justify;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+.about .about-content .right .text span:hover{
+  color: white;
+}
+.about .about-content .right p:hover{
+  color: rgb(31, 157, 210);
+}
+
+.skills{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: linear-gradient(to left, #0e0d0d, #282726);
+}
+.skills .title:hover{
+  color: black;
+
+}
+.skills .skills-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 300px;
+  margin-right: 200px;
+}  
+
+.skills .skills-content .column {
+  width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.skills .skills-content .left p {
+  text-align: justify;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.skills .skills-content .left p:hover{
+  color: rgb(31, 157, 210);
+}
+
+.skills .skills-content .right .info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.skills .skills-content .right .info img {
+  padding: 10px;
+  margin: 5px;
+}
+
+.projects{
+  background: linear-gradient(to right, #0e0d0d, #282726);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.projects .title:hover{
+  color: black;
+
+}
+.projects .project-content .container {
+  border-radius: 10px;
+  padding: 20px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.projects .project-content .container:hover {
+  background: rgb(48, 48, 48);
+}
+.projects .project-content .container .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.projects .project-content .container:hover .box {
+  transform: scale(0.99);
+}
+.projects .project-content .container h1 {
+  font-size: 24px;
+  padding-top: 10px;
+  color: aqua;
+}
+.projects .project-content .container p {
+  font-size: 18px;
+  padding-top: 10px;
+  color: #fff;
+}
+.projects .project-content .container p:hover{
+  color: rgb(31, 157, 210);
+}
+.projects .project-content .container img {
+  height: 400px;
+  width: 800px;
+  object-fit: fill;
+  border-radius: 10px;
+  border: 2px solid aqua;
+  transition: all 0.3s ease;
+}
+.projects .project-content .container:hover img {
+  border-color: #fff;
+}
+
+.resume{
+  background: linear-gradient(to left, #0e0d0d, #282726);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.resume .title:hover{
+  color: black;
+}
+.resume .resume-content .box {
+  border-radius: 10px;
+  padding: 25px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.resume .resume-content .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.resume .resume-content .box:hover  {
+  transform: scale(0.99);
+}
+.resume .resume-content .box h1 {
+  font-size: 20px;
+  padding-top: 10px;
+  color: #fff;
+}
+.resume .resume-content .box:hover h1{
+  color: black;
+}
+.resume .resume-content .box img {
+  height: 200px;
+  width: 200px;
+  object-fit: fill;
+  border-radius: 10px;
+  border: 2px solid aqua;
+  transition: all 0.3s ease;
+}
+.resume .resume-content .box:hover img {
+  border-color: #fff;
+}
+
+
+.contact {
+  padding: 110px;
+  background: linear-gradient(to right, #0e0d0d, #282726);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contact .title:hover{
+  color: black;
+
+}
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.contact-item {
+  flex: 1;
+  text-align: center;
+  margin: 0 1rem;
+}
+
+.contact-item i {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.contact-item h3 {
+  margin: 0.5rem 0;
+}
+
+.contact-item a {
+  color: white;
+}
+.contact-item p {
+  background: linear-gradient(to right, #e6e0e0, #282726);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.stay-connected {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.stay-connected h2 {
+  margin-bottom: 1rem;
+}
+
+.stay-connected:hover{
+  color: black;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-color: #060606;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2rem;
+  color: #f0e3e3;
+  text-decoration: none;
+}
+
+.icon-facebook::before {
+  content: '\f09a';
+  font-family: 'FontAwesome';
+}
+
+.icon-twitter::before {
+  content: '\f099'; 
+  font-family: 'FontAwesome';
+}
+
+.icon-linkedin::before {
+  content: '\f08c'; 
+  font-family: 'FontAwesome';
+}
+
+footer {
+  background-color: black;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.footer-name {
+  position: absolute;
+  left: 1rem;
+  font-size: 50px;
+  font-family: 'Great Vibes', cursive;
+  background: linear-gradient(to right, #ef4e25, #ebb185);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-name p {
+  margin: 0;
+}
+
+.footer-copy {
+  text-align: center;
+  margin: 0 auto;
+  flex: 1;
+}
+.scroll-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.scroll-up:hover {
+  background: #14032b;
+}
